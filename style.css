@@ -1,0 +1,316 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  body {
+    background: #fafafa;
+  }
+  header {
+    padding: 22px 24px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logo {
+    height: 20px;
+    width: 139px;
+  }
+  header .icon-hamburger {
+    height: 11px;
+    width: 24px;
+  }
+  main .hero {
+    background-image: url(./images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+  }
+  main .hero .hero-img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  main .hero .hero-img img {
+    -o-object-position: 0px -80px;
+       object-position: 0px -80px;
+  }
+  main .hero .hero-text {
+    padding: 0px 24px 88px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .hero .hero-text h1 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: -0.714286px;
+    color: #2d314d;
+    margin-bottom: 16px;
+  }
+  main .hero .hero-text p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.234375px;
+    color: #9597a5;
+    margin-bottom: 32px;
+  }
+  main .hero .hero-text a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+    border-radius: 22px;
+    height: 44px;
+    width: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .why {
+    background: #f4f5f7;
+    padding: 64px 24px;
+  }
+  main .why h2 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.571429px;
+    color: #2d314d;
+    margin-bottom: 14px;
+  }
+  main .why .we {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.234375px;
+    color: #9597a5;
+    margin-bottom: 56px;
+  }
+  main .why .grid .item + .item {
+    margin-top: 32px;
+  }
+  main .why .grid .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .why .grid .item .icon {
+    margin-bottom: 24px;
+    height: 72px;
+    width: 72px;
+  }
+  main .why .grid .item h3 {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    color: #2d314d;
+    margin-bottom: 16px;
+  }
+  main .why .grid .item p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.234375px;
+    color: #9597a5;
+  }
+  main .latest-articals {
+    padding: 88px 24px;
+  }
+  main .latest-articals h2 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: -0.571429px;
+    color: #2d314d;
+    margin-bottom: 31px;
+  }
+  main .latest-articals .article + .article {
+    margin-top: 24px;
+  }
+  main .latest-articals .article {
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  main .latest-articals .article .image {
+    margin-bottom: 25px;
+    border-radius: 5px 5px 0px 0px;
+  }
+  main .latest-articals .article .image img {
+    border-radius: 5px 5px 0px 0px;
+  }
+  main .latest-articals .article .text {
+    padding: 25px 31px 24px 31px;
+  }
+  main .latest-articals .article .by {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: #9597a5;
+    margin-bottom: 8px;
+  }
+  main .latest-articals .article h4 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+    color: #2d314d;
+    margin-bottom: 8px;
+  }
+  main .latest-articals .article .last-p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+    color: #9597a5;
+  }
+  footer {
+    background: #2d314d;
+    padding: 40px 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .logo {
+    margin-bottom: 32px;
+    height: 20px;
+    width: 139px;
+  }
+  footer .social-media {
+    margin-bottom: 32px;
+    height: 24px;
+    width: 184.8000030518px;
+    display: flex;
+    align-items: center;
+  }
+  footer .social-media .icon + .icon {
+    margin-left: 16px;
+  }
+  footer .social-media .icon {
+    height: 24px;
+    width: 24px;
+  }
+  footer ul {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer ul li + li {
+    margin-top: 8px;
+  }
+  footer ul li a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.234375px;
+    color: #ffffff;
+  }
+  footer .request {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #33d35e 0%, #2ab6d9 99.58%);
+    border-radius: 22px;
+    height: 44px;
+    width: 163px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+  footer p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: -0.234375px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+/*############ for-tablet-portrait-up ##############*/
+/*############ for-tablet-landscape-up #############*/
+/*############ for-desktop-up ###########*/
+/*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */
